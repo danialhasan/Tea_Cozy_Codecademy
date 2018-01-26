@@ -1,0 +1,165 @@
+body{
+/*    display:flex;*/
+    background-color:black;
+    color:whitesmoke;
+    font-family:helvetica;
+}
+#header{
+    position:fixed;
+/*    display:flex;*/
+    width:100%; /*99% of viewscreen width (vw) */
+    top:0;
+    border-bottom:1px solid seashell;
+    color:white;
+    background-color:black;
+    z-index:100;
+}
+ul li{
+    padding:20px 20px 20px 20px;
+/*    margin-right:0px;*/
+    font-size:20px;
+}
+ul{
+    display:flex;
+    list-style-type: none;
+    position:absolute;
+    right:0px;
+}
+.headImg{
+    opacity:0.9;
+    float:left;
+}
+#mission{
+    top:100px;
+    text-align: center;
+    height:100vh;
+    flex-wrap:nowrap;/* controls the wrapping of element, important*/
+    flex-direction:column;
+    z-index:10;
+/*    display:inline-flex;*/
+/*    margin:auto;*/
+/*    display:inline-block;*/
+}
+.background{
+    position:static;
+    height:100vh;
+    width:1200px;
+    z-index: 10;
+    margin:0px auto;
+/*    display:inline-block;*/
+}
+#missionText{
+    position:absolute;
+    display:inline-flex;
+    justify-content: space-around; /*major axis*/
+    flex-wrap:wrap;
+    color:white;
+    z-index:20;
+    top:35vh;          /*needed for centering in middle*/
+    left:0px;           /*needed for centering in middle*/
+    right:0px;          /*needed for centering in middle*/
+    margin:0px auto;    /*needed for centering in middle*/
+    text-align:center;
+    margin:auto;
+    padding:0 0;
+    background-color:black;
+    width:1200px;
+}
+
+#missionText h1{
+    padding:0 0;
+}
+#missionText h2{
+    margin:10px 70px;   
+}
+.flex-container{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+#menuContainer{
+    
+}
+#menuText{
+    text-align: center;
+    width:1000px;
+    margin:0 auto;
+}
+#menu{
+    position:static;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:center;
+/*    flex-grow:3;*/
+    width:90%;
+/*    height:1000px;*/
+    margin:0 auto;   
+}
+.imgChoices{
+    width:400px;
+    height:300px;
+    flex-wrap:wrap;
+
+    justify-content:space-around;
+}
+#choices{
+    text-align:center;
+}
+.locations{
+    display:flex;
+    align-self:flex-start;
+    position: absolute; /*this, combined with text-align:center and aling-self:flex-start; will align it.*/
+    text-align:center;
+    padding-top:20px;
+    font-size:50px;
+}
+#locationsContainer{
+    background:url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+    background-repeat: no-repeat;
+/*    background-size: cover;*/
+    display:flex;
+    height:570px;
+    width:1200px;
+    margin:0 auto;
+    text-align:center;
+    justify-content: center;/*centers vertically*/
+    align-items:center; /*centers horizontally*/
+}
+#innerLocationsContainer{
+    display:inline-flex;
+    width:980px;
+    height:300px;
+    justify-content: space-between;
+}
+#left, #center, #right{
+    width:300px;
+    background-color:black;
+    line-height:10px;
+    opacity:1;
+}
+#left{
+    display:flex;
+    flex-direction: column;
+}
+h3{
+    font-size:35px;
+}
+#left h2{
+    font-weight:100;
+}
+#center h2{
+    font-weight:100;
+}
+#right h2{
+    font-weight:100;
+}
+#footer{
+    position:absolute;
+    width:100%;
+    height:200px;
+    text-align:center;
+}
+.copyright{
+    text-align:left;
+}
